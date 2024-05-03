@@ -16,12 +16,7 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-            steps {
-                echo 'Deliver Job, Skipped because it was failing to get the jar file!'
-            }
-        }
-        stage('Complete') {
+        stage('Complete - MultiBranch Pipeline') {
             steps {
                 echo 'Job complete!'
             }
